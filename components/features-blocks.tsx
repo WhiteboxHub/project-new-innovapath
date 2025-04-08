@@ -244,16 +244,44 @@ export default function AITrainingCards() {
 
       <div className="mt-8 grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
         {/* First Card */}
-        <div className="bg-gradient-to-br from-[#1A103E] to-[#2D1A64] p-6 rounded-2xl shadow-lg">
-          <h3 className="text-xl font-semibold text-white">Finesse your foundation model</h3>
-          <p className="mt-2 text-gray-300">
+        {/* <div className="bg-gradient-to-br from-[#1A103E] to-[#2D1A64] p-8 rounded-2xl shadow-xl scale-105 transition-transform duration-300">
+          <h3 className="text-2xl font-semibold text-white">Finesse your foundation model</h3>
+          <p className="mt-4 text-lg text-gray-300 leading-relaxed">
             Our trainers are experts. 30% hold Masters and PhDs with specializations in dozens of
             domains, supporting 30+ coding languages and frameworks.
           </p>
-          <button className="mt-4 bg-white text-black px-4 py-2 rounded-lg font-semibold">
+          <div className="mt-20 flex justify-center">
+          <button className="mt-20   bg-white text-black px-4 py-2 rounded-lg font-semibold">
             Explore AI training
           </button>
-        </div>
+          </div>
+        </div> */}
+
+{/* <div className="mt-8 grid md:grid-cols-2 gap-6 max-w-6xl mx-auto"> */}
+  {/* Styled Card */}
+  <div className="relative group rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-[1.03]">
+    
+    {/* Offset glowing gradient outline */}
+    <div className="absolute -inset-1 bg-gradient-to-br from-[#1A103E] to-[#2D1A64] group-hover:from-[#2D1A64] group-hover:to-[#1A103E] rounded-3xl blur-lg opacity-40 group-hover:opacity-60 transition-all duration-500 -z-10"></div>
+
+    {/* Card Content */}
+    <div className="relative bg-gradient-to-br from-[#1A103E] to-[#7b4fff] rounded-2xl p-8 shadow-xl">
+      <h3 className="text-2xl font-semibold text-white">Finesse your foundation model</h3>
+      <p className="mt-4 text-lg text-gray-300 leading-relaxed">
+        Our trainers are experts. 30% hold Masters and PhDs with specializations in dozens of
+        domains, supporting 30+ coding languages and frameworks.
+      </p>
+
+      {/* Centered Button with spacing and hover effect */}
+      <div className="mt-12 flex justify-center">
+        <button className="bg-white text-black px-5 py-3 rounded-xl font-semibold shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg">
+          Explore AI training
+        </button>
+      </div>
+    </div>
+  </div>
+{/* </div> */}
+
 
 
 
