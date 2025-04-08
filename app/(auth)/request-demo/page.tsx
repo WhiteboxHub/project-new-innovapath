@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Request Demo - Tidy',
+  title: 'Request Demo - Innovapath',
   description: 'Page description',
 }
 
@@ -27,7 +27,7 @@ export default function RequestDemo() {
                   src="/images/logo/IP_logo.png" 
                   width={200}  
                   height={200} 
-                  className=" "
+                  alt="Innovapath Logo"
                 />
               </Link>
               </div>

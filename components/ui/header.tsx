@@ -112,11 +112,29 @@ export default function Header({ mode = 'dark' }: { mode?: string }) {
           </nav>
 
           {/* "Request Demo" link positioned at the extreme right */}
-          <div className="flex items-center">
+          
+          {/* <div className="flex items-center">
             <Link href="/request-demo" className="font-medium text-blue-600 dark:text-slate-300 dark:hover:text-white px-3 lg:px-5 py-2 transition duration-150 ease-in-out group">
               Request Demo <span className="tracking-normal text-blue-600 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
             </Link>
+          </div> */}
+
+
+          <div className="flex items-center">
+            <div className="bg-white dark:bg-slate-800 border border-blue-600 dark:border-slate-500 rounded-xl px-4 py-2 shadow-md hover:shadow-lg transition-shadow duration-200">
+              <Link 
+                href="/request-demo" 
+                className="font-medium text-blue-600 dark:text-slate-300 dark:hover:text-white transition duration-150 ease-in-out group flex items-center"
+              >
+                Request Demo 
+                <span className="tracking-normal text-blue-600 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                  -&gt;
+                </span>
+              </Link>
+            </div>
           </div>
+
+
 
           {/* Mobile menu */}
           <MobileMenu />
