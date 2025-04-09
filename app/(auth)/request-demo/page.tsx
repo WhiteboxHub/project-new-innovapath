@@ -20,7 +20,7 @@ export default function RequestDemo() {
             <div className="w-full max-w-md mx-auto">
 
               {/* Site branding */}
-              <div className="mb-6">
+              <div className="mb-2">
                 {/* Logo */}
                 <Link href="/" className=" block text-blue-600 transition duration-150 ease-in-out" aria-label="IP">
                 <Image 
@@ -32,7 +32,7 @@ export default function RequestDemo() {
               </Link>
               </div>
 
-              <h1 className="h2 font-playfair-display text-slate-800 mb-8">Request your demo</h1>
+              {/* <h1 className="h2 font-playfair-display text-slate-800 mb-8">Request your demo</h1> */}
 
               {/* Form */}
               <form>
@@ -89,38 +89,37 @@ export default function RequestDemo() {
 
       {/* Right side */}
       <div className="relative hidden md:block md:w-1/2 bg-slate-900" aria-hidden="true">
-
-        {/* Bg image */}
-        {/* <div className="absolute inset-0" data-aos="fade">
-          <Image className="opacity-10 w-full h-full object-cover" src={PageBg} width={760} height={900} priority alt="Background" />
-        </div> */}
-
-        {/* Quote */}
-        {/* <div className="min-h-screen h-full flex flex-col justify-center">
-          <div className="px-5 sm:px-6">
-            <div className="w-full max-w-lg mx-auto">
-              <h2 className="h3 md:text-4xl font-playfair-display text-slate-100 mb-4">Black Inc.</h2>
-              <div className="space-y-3">
-                <svg className="fill-blue-600" width="20" height="16" viewBox="0 0 20 16">
-                  <path d="M2.76 16c2.577 0 5.154-3.219 5.154-5.996 0-1.357-.613-2.272-1.748-2.272s-2.27.726-3.283 1.64C3.16 6.439 5.613 3.346 9.571.885L9.233 0C3.466 2.903 0 7.732 0 12.213 0 14.517.828 16 2.76 16Zm10.43 0c2.577 0 5.154-3.219 5.154-5.996 0-1.357-.614-2.272-1.749-2.272-1.135 0-2.27.726-3.282 1.64.276-2.934 2.73-6.027 6.687-8.488L19.663 0c-5.767 2.903-9.234 7.732-9.234 12.213 0 2.304.829 3.787 2.761 3.787Z" />
-                </svg>
-                <blockquote className="text-slate-400 italic">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur e xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</blockquote>
-              </div> */}
-              {/* <div className="flex items-center mt-4">
-                <a href="#0">
-                  <Image className="rounded-full shrink-0 mr-3" src={CustomerAvatar} width={32} height={32} alt="Customer Avatar 04" />
-                </a> */}
-                {/* <div className="font-medium">
-                  <span className="text-slate-200">Christine Duck</span>
-                  <span className="text-slate-600"> · </span>
-                  <span className="text-slate-500">CEO, Black Inc.</span>
-                </div>
+        <div className="min-h-screen h-full flex flex-col justify-center px-6 sm:px-10">
+          <div className="max-w-lg mx-auto text-slate-100 space-y-8">
+            <h2 className="text-3xl md:text-4xl font-bold font-playfair-display">Request a demo</h2>
+            <p className="text-slate-400">
+              Fill out the form to schedule a personalized demo that shows you how Prophet Agentic AI SOC Analyst transforms alert triage and investigation.
+            </p>
+            <p className="text-slate-400">
+              During your demo, you’ll see:
+            </p>
+            <div className="space-y-4 text-slate-300">
+              <div className="flex items-start gap-3">
+                <span className="text-blue-500 mt-1">✓</span>
+                <p>A step-by-step walkthrough of how Prophet AI investigates alerts.</p>
               </div>
-            </div> */}
-          {/* </div>
-        </div> */}
+              <div className="flex items-start gap-3">
+                <span className="text-blue-500 mt-1">✓</span>
+                <p>How Prophet AI integrates into your environment with an easy 3-step API setup to drive rapid time-to-value.</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-blue-500 mt-1">✓</span>
+                <p>A demonstration of its explainable AI framework that prioritizes transparency and explainability.</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-blue-500 mt-1">✓</span>
+                <p>How Prophet AI incorporates feedback to continuously refine its investigative process and accuracy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      // </div>    
-    // </>
+    </>
   )
 }
