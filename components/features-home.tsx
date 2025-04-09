@@ -135,6 +135,97 @@
 
 // ---------------------------------------------------------------------------------
 
+// 'use client'
+
+// import { useState } from 'react'
+// import { Transition } from '@headlessui/react'
+// import FeatureCard from '@/components/FeatureCard'
+// import featureData from '@/components/data/featureData'
+
+// export default function FeaturesHome() {
+//   const [tab, setTab] = useState<number>(1)
+
+//   return (
+//     <section className="relative">
+//       <div className="absolute inset-0 bg-slate-100 pointer-events-none mb-64 md:mb-80" aria-hidden="true"></div>
+
+//       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+//         <div className="py-12 md:py-20">
+
+//           {/* Section header */}
+//           <div className="max-w-3xl mx-auto text-center pb-12">
+//             <h2 className="h2 font-playfair-display text-slate-800 mb-4">
+//               Success stories with companies like yours
+//             </h2>
+//             <p className="text-xl text-slate-768">
+//               Learn how Innovapath has saved millions of hours and hundreds of millions of dollars, driving growth and innovation for clients across a range of industries and use cases.
+//             </p>
+//           </div>
+
+//           {/* Tabs buttons */}
+//           <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 pb-12">
+//             {featureData.map((feature, index) => (
+//               <button
+//                 key={feature.id}
+//                 className={`text-center transition-opacity ${tab !== index + 1 && 'opacity-50 hover:opacity-75'}`}
+//                 onClick={() => setTab(index + 1)}
+//               >
+//                 <div>
+//                   <div className="inline-flex bg-white rounded-full shadow-md mb-3 p-3">
+//                     {/* SVG icon */}
+//                     <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+//                       <circle cx="28" cy="28" r="20" fill="#2174EA" />
+//                       <text x="28" y="32" fill="white" fontSize="16" fontWeight="bold" textAnchor="middle">
+//                         {index + 1}
+//                       </text>
+//                     </svg>
+//                   </div>
+//                   <div className="md:text-lg leading-tight font-semibold text-slate-800">
+//                     {feature.category}
+//                   </div>
+//                 </div>
+//               </button>
+//             ))}
+//           </div>
+
+//           {/* Tabs items (Cards) */}
+//           <div className="transition-all">
+//             <div className="relative flex flex-col" data-aos="fade-up">
+//               {featureData.map((feature, index) => (
+//                 <Transition
+//                   key={feature.id}
+//                   show={tab === index + 1}
+//                   enter="transition ease-out duration-500"
+//                   enterFrom="opacity-0 translate-y-5"
+//                   enterTo="opacity-100 translate-y-0"
+//                   leave="transition ease-in duration-300"
+//                   leaveFrom="opacity-100 translate-y-0"
+//                   leaveTo="opacity-0 translate-y-5"
+//                 >
+//                    <div>  
+//                   <FeatureCard 
+//                     category={feature.category}
+//                     title={feature.title}
+//                     description={feature.description}
+//                     bgColor={feature.bgColor}
+//                     width={feature.width}
+//                     />
+                    
+//                    </div> 
+//                 </Transition>
+//               ))}
+//             </div>
+//           </div>
+
+//         </div>
+//       </div>
+//     </section>
+//   )
+// }
+
+// ************************
+
+
 'use client'
 
 import { useState } from 'react'
@@ -155,15 +246,15 @@ export default function FeaturesHome() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12">
             <h2 className="h2 font-playfair-display text-slate-800 mb-4">
-              Success stories with companies like yours
+              Success stories with  companies like yours
             </h2>
             <p className="text-xl text-slate-768">
-              Learn how Innovapath has saved millions of hours and hundreds of millions of dollars, driving growth and innovation for clients across a range of industries and use cases.
+              Learn how  Innovapath has saved millions of hours and hundreds of millions of dollars, driving growth and innovation for clients across a range of industries and use cases.
             </p>
           </div>
 
           {/* Tabs buttons */}
-          <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 pb-12">
+          <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 pb-10">
             {featureData.map((feature, index) => (
               <button
                 key={feature.id}
@@ -171,16 +262,11 @@ export default function FeaturesHome() {
                 onClick={() => setTab(index + 1)}
               >
                 <div>
-                  <div className="inline-flex bg-white rounded-full shadow-md mb-3 p-3">
-                    {/* SVG icon */}
-                    <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="28" cy="28" r="20" fill="#2174EA" />
-                      <text x="28" y="32" fill="white" fontSize="16" fontWeight="bold" textAnchor="middle">
-                        {index + 1}
-                      </text>
-                    </svg>
-                  </div>
-                  <div className="md:text-lg leading-tight font-semibold text-slate-800">
+                <div className="inline-flex bg-white rounded-full shadow-md mb-3 p-3">
+                  <feature.icon className="w-6 h-6 text-[#2174EA]" />
+                </div>
+
+                  <div className="md:text-m leading-tight font-semibold text-slate-800">
                     {feature.category}
                   </div>
                 </div>
@@ -195,23 +281,23 @@ export default function FeaturesHome() {
                 <Transition
                   key={feature.id}
                   show={tab === index + 1}
-                  enter="transition ease-out duration-500"
-                  enterFrom="opacity-0 translate-y-5"
-                  enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in duration-300"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 translate-y-5"
+                  // enter="transition ease-out duration-500"
+                  // enterFrom="opacity-0 translate-y-5"
+                  // enterTo="opacity-100 translate-y-0"
+                  // leave="transition ease-in duration-300"
+                  // leaveFrom="opacity-100 translate-y-0"
+                  // leaveTo="opacity-0 translate-y-5"
                 >
-                   <div>  
-                  <FeatureCard 
-                    category={feature.category}
-                    title={feature.title}
-                    description={feature.description}
-                    bgColor={feature.bgColor}
-                    width={feature.width}
+                  <div className="w-full transition ease-in-out data-closed:opacity-0 data-enter:duration-700 data-enter:data-closed:-translate-y-16 data-closed:absolute data-leave:duration-300 data-leave:data-closed:translate-y-16">
+                    <FeatureCard
+                      category={feature.category}
+                      title={feature.title}
+                      description={feature.description}
+                      bgColor={feature.bgColor}
+                      width={feature.width}
                     />
-                    
-                   </div> 
+                  </div>
+                  {/* <div >891*852*9814*841</div> */}
                 </Transition>
               ))}
             </div>
@@ -225,92 +311,4 @@ export default function FeaturesHome() {
 
 
 
-// ---------------------------------------------------------------------------------
 
-
-
-
-
-
-
-// // tidy-next\components\features-home.tsx
-// 'use client'
-
-// import { useState } from 'react'
-// import { Transition } from '@headlessui/react'
-// import Marketplaces from '@/components/Success-stories-cards'
-
-// export default function FeaturesHome() {
-//   const [tab, setTab] = useState<number>(1)
-
-//   return (
-//     <section className="relative">
-//       <div className="absolute inset-0 bg-slate-100 pointer-events-none mb-64 md:mb-80" aria-hidden="true"></div>
-
-//       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-//         <div className="py-12 md:py-20">
-//           {/* Section header */}
-//           <div className="max-w-3xl mx-auto text-center pb-12">
-//             <h2 className="h2 font-playfair-display text-slate-800 mb-4">
-//               Success stories with companies like yours
-//             </h2>
-//             <p className="text-xl text-slate-768">
-//               Learn how Innovapath has saved millions of hours and hundreds of millions of dollars, driving growth and innovation for clients across a range of industries and use cases
-//             </p>
-//           </div>
-
-//           {/* Section content */}
-//           <div className="max-w-3xl mx-auto">
-//             {/* Tabs buttons */}
-//             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pb-12">
-//               {[1, 2, 3, 4].map((num) => (
-//                 <button
-//                   key={num}
-//                   className={`text-center transition-opacity ${tab !== num && 'opacity-50 hover:opacity-75'}`}
-//                   onClick={(e) => { e.preventDefault(); setTab(num); }}
-//                 >
-//                   <div>
-//                     <div className="inline-flex bg-white rounded-full shadow-md mb-3 w-14 h-14"></div>
-//                     <div className="md:text-lg leading-tight font-semibold text-slate-800">
-//                       {['MARKET PLACES', 'Internal', 'Internal Feedback', 'Another Tab'][num - 1]}
-//                     </div>
-//                   </div>
-//                 </button>
-//               ))}
-//             </div>
-
-//             {/* Tabs items */}
-//             <div className="transition-all">
-//               <div className="relative flex flex-col" data-aos="fade-up">
-//                 <Transition show={tab === 1}>
-//               <div>
-                
-//                   <Marketplaces />
-//               </div>
-//                 </Transition>
-//                 <Transition show={tab === 2}>
-//               <div>
-                
-//                   <Marketplaces />
-//               </div>
-//                 </Transition>
-//                 <Transition show={tab === 3}>
-//               <div>
-                
-//                   <Marketplaces />
-//               </div>
-//                 </Transition>
-//                 <Transition show={tab === 4}>
-//               <div>
-                
-//                   <Marketplaces />
-//               </div>
-//                 </Transition>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }

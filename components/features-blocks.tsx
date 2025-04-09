@@ -284,18 +284,20 @@ export default function AITrainingCards() {
 
 
 
-
-
+        <div className="relative group rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-[1.03]">
         {/* Second Card */}
-        <div className="bg-gradient-to-br from-[#1A103E] to-[#2D1A64] p-6 rounded-2xl shadow-lg">
-          <h3 className="text-xl font-semibold text-white">Tackle your toughest enterprise challenges</h3>
-          <p className="mt-2 text-gray-300">
+        <div className="relative bg-gradient-to-br from-[#1A103E] to-[#7b4fff] rounded-2xl p-8 shadow-xl">
+          <h3 className="text-2xl font-semibold text-white">Tackle your toughest enterprise challenges</h3>
+          <p className="mt-4 text-lg text-gray-300 leading-relaxed">
             With native skills honed from training the best models, we automate enterprise AI
             problems, from KYC/AML to restaurant menu digitization.
           </p>
-          <button className="mt-4 bg-white text-black px-4 py-2 rounded-lg font-semibold">
+          <div className="mt-12 flex justify-center">
+          <button className="bg-white text-black px-5 py-3 rounded-xl font-semibold shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg">
             Explore AI for enterprise
           </button>
+          </div>
+          </div>
         </div>
       </div>
     </div>

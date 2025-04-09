@@ -113,7 +113,7 @@ export default function Header({ mode = 'dark' }: { mode?: string }) {
 
           {/* "Request Demo" link positioned at the extreme right */}
           <div>
-          <Link 
+          {/* <Link 
             className="btn text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded w-auto group transition duration-150 ease-in-out" 
             href="/request-demo"
           >
@@ -121,7 +121,18 @@ export default function Header({ mode = 'dark' }: { mode?: string }) {
             <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
               -&gt;
             </span>
+          </Link> */}
+
+          <Link 
+            className="btn text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl w-auto group transition duration-150 ease-in-out" 
+            href="/request-demo"
+          >
+            Request Demo 
+            <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+              -&gt;
+            </span>
           </Link>
+
         </div>
 
 
