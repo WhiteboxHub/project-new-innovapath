@@ -5,6 +5,7 @@ interface FeatureCardProps {
   title: string;
   description: string;
   bgColor: string;
+  width?: string; 
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ category, title, description, bgColor ,width}) => {
