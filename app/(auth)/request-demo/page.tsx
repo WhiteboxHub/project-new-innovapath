@@ -5,8 +5,8 @@ export const metadata = {
 
 import Link from 'next/link'
 import Image from 'next/image'
-import PageBg from '@/public/images/request-demo-bg.jpg'
-import CustomerAvatar from '@/public/images/customer-avatar-04.jpg'
+// import PageBg from '@/public/images/request-demo-bg.jpg'
+// import CustomerAvatar from '@/public/images/customer-avatar-04.jpg'
 
 export default function RequestDemo() {
   return (
@@ -93,7 +93,7 @@ export default function RequestDemo() {
           <div className="max-w-lg mx-auto text-slate-100 space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold font-playfair-display">Request a demo</h2>
             <p className="text-slate-400">
-              Fill out the form to schedule a personalized demo that shows you how Prophet Agentic AI SOC Analyst transforms alert triage and investigation.
+              Fill out the form to schedule a personalized demo that shows you how Innovapath Agentic AI SOC Analyst transforms alert triage and investigation.
             </p>
             <p className="text-slate-400">
               During your demo, you’ll see:
@@ -101,11 +101,11 @@ export default function RequestDemo() {
             <div className="space-y-4 text-slate-300">
               <div className="flex items-start gap-3">
                 <span className="text-blue-500 mt-1">✓</span>
-                <p>A step-by-step walkthrough of how Prophet AI investigates alerts.</p>
+                <p>A step-by-step walkthrough of how Innovapath AI investigates alerts.</p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-blue-500 mt-1">✓</span>
-                <p>How Prophet AI integrates into your environment with an easy 3-step API setup to drive rapid time-to-value.</p>
+                <p>How Innovapath AI integrates into your environment with an easy 3-step API setup to drive rapid time-to-value.</p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-blue-500 mt-1">✓</span>
@@ -113,7 +113,7 @@ export default function RequestDemo() {
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-blue-500 mt-1">✓</span>
-                <p>How Prophet AI incorporates feedback to continuously refine its investigative process and accuracy.</p>
+                <p>How Innovapath AI incorporates feedback to continuously refine its investigative process and accuracy.</p>
               </div>
             </div>
           </div>
