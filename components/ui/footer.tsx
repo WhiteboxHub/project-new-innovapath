@@ -141,13 +141,42 @@
 //   )
 // }
 
-// new_Innova-path/components/ui/footer.tsx
-import Link from "next/link";
-import Logo from "./logo";
-const currentYear = new Date().getFullYear();
-export default function Footer() {
-  return (
-    <>
+'use client';
+
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import Logo from './logo';
+// export default function Footer() {
+//   return (
+  export default function Footer() {
+    const [showScroll, setShowScroll] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 300) {
+          setShowScroll(true);
+        } else {
+          setShowScroll(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+  
+    return (
+      <>
+        {/* Scroll to Top Button */}
+        {showScroll && (
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="fixed bottom-6 right-6 z-50 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg transition duration-300"
+            aria-label="Scroll to top"
+          >
+            ↑ 
+          </button>
+        )}
+    {/* <> */}
       {/* New Content Block */}
       <div className="bg-slate-900 text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-left">
@@ -459,6 +488,9 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+
+            
+            
 
             {/* Copyrights note */}
             <div className="text-sm text-slate-500 mr-4">

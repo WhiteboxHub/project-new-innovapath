@@ -112,38 +112,20 @@ export default function Header({ mode = 'dark' }: { mode?: string }) {
           </nav>
 
           {/* "Request Demo" link positioned at the extreme right */}
+
           <div>
-          {/* <Link 
-            className="btn text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded w-auto group transition duration-150 ease-in-out" 
-            href="/request-demo"
-          >
-            Request Demo 
-            <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-              -&gt;
-            </span>
-          </Link> */}
-
-          <Link 
-            className="btn text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl w-auto group transition duration-150 ease-in-out" 
-            href="/request-demo"
-          >
-            Request Demo 
-            <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-              -&gt;
-            </span>
-          </Link>
-
-        </div>
-
-
-          {/* <div className="flex items-center">
-            <Link href="/request-demo" className="font-medium text-blue-600 dark:text-slate-300 dark:hover:text-white px-3 lg:px-5 py-2 transition duration-150 ease-in-out group">
-              Request Demo <span className="tracking-normal text-blue-600 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+          <div className="hidden md:block">
+            <Link 
+              className="btn text-sm text-white bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded-xl w-full sm:w-auto group transition duration-150 ease-in-out text-center" 
+              href="/request-demo"
+            >
+              Request Demo 
+              <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                -&gt;
+              </span>
             </Link>
-          </div> */}
-
-
-
+          </div>
+        </div>
 
           {/* Mobile menu */}
           <MobileMenu />

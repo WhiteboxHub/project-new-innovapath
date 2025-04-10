@@ -68,10 +68,13 @@ export default function FeaturesHome02() {
                 <p className="text-xl text-slate-500">Innovapath's platform combines AI, hundreds of integrations, and expert teams to deliver scalable, high-quality outcomes on demand.</p>
               </div>
               {/* Tabs buttons */}
-              <div className="mb-8 md:mb-0">
+              {/* <div className="mb-8 md:mb-0"> */}
+              <div className="mb-8 md:mb-0 flex flex-col items-center">
+
                 <button
-                  className={`flex items-start text-left bg-white border-2 px-5 py-3 rounded-sm shadow-md transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'border-transparent opacity-50 hover:opacity-75' : 'border-2 border-blue-500 opacity-100'}`}
+                  className={`w-80 h-24 md:w-96 md:h-24 flex items-start text-left bg-white border-2 px-5 py-3 rounded-sm shadow-md transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'border-transparent opacity-50 hover:opacity-75' : 'border-2 border-blue-500 opacity-100'}`}
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
+               
                 >
                   <svg className="w-4 h-4 fill-current text-blue-600 shrink-0 mt-1 mr-4" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.4 6.6c.8.8.8 2 0 2.8-.8.8-2 .8-2.8 0-.8-.8-5-7.8-5-7.8s7 4.2 7.8 5Z" /><path d="M8 16c-4.4 0-8-3.6-8-8 0-.6.4-1 1-1s1 .4 1 1c0 3.3 2.7 6 6 6s6-2.7 6-6-2.7-6-6-6c-.6 0-1-.4-1-1s.4-1 1-1c4.4 0 8 3.6 8 8s-3.6 8-8 8Z" />
@@ -82,8 +85,9 @@ export default function FeaturesHome02() {
                   </div>
                 </button>
                 <button
-                  className={`flex items-start text-left bg-white border-2 px-5 py-3 rounded-sm shadow-md transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'border-transparent opacity-50 hover:opacity-75' : 'border-2 border-blue-500 opacity-100'}`}
+                  className={`w-80 h-24 md:w-96 md:h-24 flex items-start text-left bg-white border-2 px-5 py-3 rounded-sm shadow-md transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'border-transparent opacity-50 hover:opacity-75' : 'border-2 border-blue-500 opacity-100'}`}
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
+         
                 >
                   <svg className="w-4 h-4 fill-current text-blue-600 shrink-0 mt-1 mr-4" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.019 15.276.034 1.329A1.058 1.058 0 0 1 1.33.034L15.276 4.02c.896.299.996 1.494.1 1.893L8.8 8.8l-2.79 6.574c-.498.897-1.693.797-1.992-.1ZM2.525 2.525l2.69 9.463 1.892-4.383c.1-.199.299-.398.498-.498l4.383-1.893-9.463-2.69Z" />
@@ -94,7 +98,7 @@ export default function FeaturesHome02() {
                   </div>
                 </button>
                 <button
-                  className={`flex items-start text-left bg-white border-2 px-5 py-3 rounded-sm shadow-md transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'border-transparent opacity-50 hover:opacity-75' : 'border-2 border-blue-500 opacity-100'}`}
+                  className={`w-80 h-24 md:w-96 md:h-24 flex items-start text-left bg-white border-2 px-5 py-3 rounded-sm shadow-md transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'border-transparent opacity-50 hover:opacity-75' : 'border-2 border-blue-500 opacity-100'}`}
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <svg className="w-4 h-4 fill-current text-blue-600 shrink-0 mt-1 mr-4" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
