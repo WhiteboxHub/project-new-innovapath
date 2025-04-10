@@ -141,6 +141,7 @@
 //   )
 // }
 
+// new_Innova-path/components/ui/footer.tsx
 import Link from "next/link";
 import Logo from "./logo";
 const currentYear = new Date().getFullYear();
@@ -203,8 +204,8 @@ export default function Footer() {
 
           <div className="flex-1 lg:max-w-xs flex flex-col items-start mb-2">
           {/* Logo */}
-          <div className="mt-[-70px] mb-0 ml-[-60px] leading-none">
-            <Logo className="mb-0 pb-0" />
+          <div className="mt-[-70px] mb-0  pb-0 ml-[-60px] leading-none">
+            <Logo />
           </div>
 
           {/* Text */}
