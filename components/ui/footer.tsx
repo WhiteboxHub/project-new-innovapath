@@ -235,12 +235,12 @@ import Logo from './logo';
 
           <div className="flex-1 lg:max-w-xs flex flex-col items-start mb-2">
           {/* Logo */}
-          <div className="mt-[-70px] mb-0  pb-0 ml-[-60px] leading-none">
+          <div className=" mb-0  pb-0 ml-[-60px] leading-none">
             <Logo />
           </div>
 
           {/* Text */}
-          <div className="text-md  text-black mt-[-70] ml-[-10px] leading-none">
+          <div className="text-md  text-black  ml-[-10px] leading-none">
             Innovapath Inc
           </div>
         </div>
