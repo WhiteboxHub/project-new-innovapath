@@ -148,6 +148,8 @@ import Link from 'next/link';
 import Logo from './logo';
 // export default function Footer() {
 //   return (
+  const currentYear = new Date().getFullYear();
+
   export default function Footer() {
     const [showScroll, setShowScroll] = useState(false);
   
