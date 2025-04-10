@@ -21,10 +21,11 @@ export default function HeroHome() {
               <p className="text-xl text-slate-400 mb-8">Trusted to refine the leading AI models, our unique expertise helps enterprises propel their concepts into full-scale production.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>
-                  <Link className="btn text-white bg-blue-600 hover:bg-blue-700  rounded-xl w-auto group" href="/request-demo">
+                  <Link className="btn text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl w-auto group transition duration-150 ease-in-out" href="/request-demo">
                     Request Demo <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                   </Link>
                 </div>
+
                 {/* <div>
                   <Link className="btn text-white bg-slate-700 hover:bg-slate-800 w-full" href="#0">Explore Product</Link>
                 </div> */}
