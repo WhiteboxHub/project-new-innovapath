@@ -150,19 +150,17 @@ export default function Footer() {
   return (
     <>
       {/* New Content Block */}
-      <div className="bg-gradient-to-r from-indigo-800 to-purple-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="bg-slate-900 text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto text-left">
           <h2 className="text-3xl font-bold mb-4">Fast-track your strategic vision</h2>
-          <p className="text-lg mb-6">
+          <p className="text-lg mb-10">
             Speak to our team to learn how to unlock game-changing efficiency, scale, and growth opportunities.
           </p>
           {/* Updated Link for Request a Demo */}
           <Link
-            href="/request-demo"
-            className="font-medium text-blue-600 dark:text-slate-300 dark:hover:text-white px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out group"
-          >
+            className="btn text-white bg-blue-600 hover:bg-blue-700  px-4 py-2 rounded-xl w-auto group mt-8" href="/request-demo">
             Request Demo
-            <span className="tracking-normal text-blue-600 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+            <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
               -&gt;
             </span>
           </Link>
@@ -174,16 +172,22 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col sm:flex-row justify-between gap-8 py-8 md:py-12">
             {/* 1st block */}
-            <div className="flex-1 lg:max-w-xs flex flex-col mb-2">
+            <div className="flex-1 lg:max-w-xs flex flex-col  mb-2">
               {/* Logo */}
               {/* <Link href="/" className="inline-flex text-blue-600 transition duration-150 ease-in-out nt-0 mb-0" aria-label="Innovapath">
                 <img src="/images/ip_log_.svg" alt="Innovapath Logo" className="w-150 h-35 mt-[-50px]" />
               </Link> */}
-              <Logo />
+              {/* <Logo /> */}
+              <div className="mt-[-20px] mb-0 ml-[-60px] leading-none">
+            <Logo className="mb-0 pb-0" />
+          </div>
               {/* Text */}
-              <div className="text-lg font-bold text-slate-800 mb-40 mt-[-50px] ml-7">
-                Innovapath Technologies
+              <div className="text-md font-bold text-slate-800 mb-40 mt-[-20] ml-[-1px]">
+                Innovapath.Inc
               </div>
+              {/* <div className="text-md  text-black mt-[-70] ml-[-10px] leading-none">
+                Innovapath Inc
+          </div> */}
             </div>
 
             {/* 2nd block */}
@@ -288,6 +292,8 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+
+            
             
 
             {/* Copyrights note */}
