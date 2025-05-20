@@ -269,10 +269,13 @@ export default function AITrainingCards() {
       <h3 className="text-2xl font-semibold text-white"> Conversational AI Assistants</h3>
       <p className="mt-4 text-lg text-gray-300 leading-relaxed">
         Smart chatbots that handle internal HR queries, guide employees through policies, and reduce helpdesk load.
+        </p>
+        <ul className="mt-4 list-disc list-inside text-gray-300 text-lg space-y-1">
         <li>Natural language support across platforms.</li>
         <li>Available 24/7 for HR, payroll, and policy questions.</li>
         <li>Integrates seamlessly with existing HR systems.</li>
-      </p>
+        </ul>
+      {/* </p> */}
 
       {/* Centered Button with spacing and hover effect */}
       {/* <div className="mt-12 flex justify-center">
@@ -292,10 +295,13 @@ export default function AITrainingCards() {
           <h3 className="text-2xl font-semibold text-white">Continuous AI Governance</h3>
           <p className="mt-4 text-lg text-gray-300 leading-relaxed">
             Automated monitoring and control for evolving talent practices.
+            </p>
+            <ul className="mt-4 list-disc list-inside text-gray-300 text-lg space-y-1">
             <li>Detect anomalies in hiring or attrition.</li>
             <li>Align HR initiatives with internal risk thresholds.</li>
             <li>Alert and auto-suggest resolutions in real-time.</li>
-          </p>
+            </ul>
+          
           {/* <div className="mt-12 flex justify-center"> */}
           {/* <button className="bg-white text-black px-5 py-3 rounded-xl font-semibold shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg">
             Explore AI for enterprise
