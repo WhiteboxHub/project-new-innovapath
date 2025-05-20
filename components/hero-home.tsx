@@ -17,8 +17,8 @@ export default function HeroHome() {
 
             {/* Content */}
             <div className="text-center md:text-left md:min-w-[30rem]" data-aos="fade-right">
-              <h1 className="h1 font-playfair-display text-slate-100 mb-4">From training models to scaling enterprises</h1>
-              <p className="text-xl text-slate-400 mb-8">Trusted to refine the leading AI models, our unique expertise helps enterprises propel their concepts into full-scale production.</p>
+              <h1 className="h1 font-playfair-display text-slate-100 mb-4">Reimagine Talent Management with the Power of AI</h1>
+              <p className="text-xl text-slate-400 mb-8">Harness AI Agents, RAG, and Smart Chatbots to streamline talent operations, drive decision-making, and scale innovation—seamlessly.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>
                   <Link className="btn text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl w-auto group transition duration-150 ease-in-out" href="/request-demo">

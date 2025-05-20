@@ -11,10 +11,12 @@ import Image from 'next/image'
 export default function RequestDemo() {
   return (
     <>
-      {/* Content */}
-      <div className="w-full md:w-1/2">
 
-        <div className="min-h-screen h-full flex flex-col justify-center">
+      {/* Content */}
+      <div className="w-full md:w-1/2 border ">
+
+        <div className="min-h-screen borderh-full flex flex-col justify-center">
+    {/* <Header/> */}
 
           <div className="px-5 sm:px-6 py-4">
             <div className="w-full max-w-md mx-auto">

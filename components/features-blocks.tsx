@@ -266,18 +266,20 @@ export default function AITrainingCards() {
 
     {/* Card Content */}
     <div className="relative bg-gradient-to-br from-[#1A103E] to-[#7b4fff] rounded-2xl p-8 shadow-xl">
-      <h3 className="text-2xl font-semibold text-white">Finesse your foundation model</h3>
+      <h3 className="text-2xl font-semibold text-white"> Conversational AI Assistants</h3>
       <p className="mt-4 text-lg text-gray-300 leading-relaxed">
-        Our trainers are experts. 30% hold Masters and PhDs with specializations in dozens of
-        domains, supporting 30+ coding languages and frameworks.
+        Smart chatbots that handle internal HR queries, guide employees through policies, and reduce helpdesk load.
+        <li>Natural language support across platforms.</li>
+        <li>Available 24/7 for HR, payroll, and policy questions.</li>
+        <li>Integrates seamlessly with existing HR systems.</li>
       </p>
 
       {/* Centered Button with spacing and hover effect */}
-      <div className="mt-12 flex justify-center">
+      {/* <div className="mt-12 flex justify-center">
         <button className="bg-white text-black px-5 py-3 rounded-xl font-semibold shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg">
           Explore AI training
         </button>
-      </div>
+      </div> */}
     </div>
   </div>
 {/* </div> */}
@@ -287,16 +289,18 @@ export default function AITrainingCards() {
         <div className="relative group rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-[1.03]">
         {/* Second Card */}
         <div className="relative bg-gradient-to-br from-[#1A103E] to-[#7b4fff] rounded-2xl p-8 shadow-xl">
-          <h3 className="text-2xl font-semibold text-white">Tackle your toughest enterprise challenges</h3>
+          <h3 className="text-2xl font-semibold text-white">Continuous AI Governance</h3>
           <p className="mt-4 text-lg text-gray-300 leading-relaxed">
-            With native skills honed from training the best models, we automate enterprise AI
-            problems, from KYC/AML to restaurant menu digitization.
+            Automated monitoring and control for evolving talent practices.
+            <li>Detect anomalies in hiring or attrition.</li>
+            <li>Align HR initiatives with internal risk thresholds.</li>
+            <li>Alert and auto-suggest resolutions in real-time.</li>
           </p>
-          <div className="mt-12 flex justify-center">
-          <button className="bg-white text-black px-5 py-3 rounded-xl font-semibold shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg">
+          {/* <div className="mt-12 flex justify-center"> */}
+          {/* <button className="bg-white text-black px-5 py-3 rounded-xl font-semibold shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg">
             Explore AI for enterprise
-          </button>
-          </div>
+          </button> */}
+          {/* </div> */}
           </div>
         </div>
       </div>

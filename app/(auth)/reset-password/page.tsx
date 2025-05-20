@@ -5,6 +5,7 @@ export const metadata = {
 
 import Link from 'next/link'
 import Image from 'next/image'
+
 import PageBg from '@/public/images/reset-password-bg.jpg'
 
 export default function ResetPassword() {

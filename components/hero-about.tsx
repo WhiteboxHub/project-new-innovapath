@@ -16,9 +16,14 @@ export default function HeroAbout() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 md:pt-40">
 
-          {/* Section header */}
+      {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-16">
-            <h1 className="h1 font-playfair-display text-slate-100">We're designing a new way to do business</h1>
+            <h1 className="h1 font-playfair-display text-slate-100">
+              Built for the Future of Work
+            </h1>
+            <p className="mt-4 text-lg text-slate-300">
+              Innovapath is a mission-driven AI company helping organizations unlock the full potential of their workforce using advanced language models and intelligent automation.
+            </p>
           </div>
 
           {/* Hero image */}
