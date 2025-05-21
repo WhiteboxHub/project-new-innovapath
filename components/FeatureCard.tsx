@@ -31,7 +31,7 @@ interface FeatureCardProps {
   title: string;
   description: string;
   bgColor: string;
-  width?: string;
+  width?: string; 
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
