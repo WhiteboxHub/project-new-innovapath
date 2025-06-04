@@ -225,19 +225,21 @@ export default function Header({ mode = 'dark' }: { mode?: string }) {
 
           {/* Desktop navigation + Request Demo aligned right */}
           <div className="hidden md:flex items-center ml-auto space-x-4">
-            <nav className="flex items-center space-x-2">
-              <Dropdown title="Why IP">
-                <Link href="/404" className="font-medium text-sm text-gray-600 hover:text-blue-600 flex py-2 px-5 leading-tight">
+            {/* <nav className="flex font-bold items-center space-x-2"> */}
+              
+
+              {/* <Dropdown  title="Why IP">
+                <Link href="/404" className=" text-sm text-gray-600 hover:text-blue-600 flex py-2 px-5 leading-tight">
                   404
                 </Link>
-                <Link href="/support" className="font-medium text-sm text-gray-600 hover:text-blue-600 flex py-2 px-5 leading-tight">
+                <Link href="/support" className=" text-sm text-gray-600 hover:text-blue-600 flex py-2 px-5 leading-tight">
                   Support
-                </Link>
-              </Dropdown>
-              <Link href="/about" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 transition duration-150 ease-in-out">
+                </Link> */}
+              {/* </Dropdown> */}
+              {/* <Link href="/about" className=" text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 transition duration-150 ease-in-out">
                 About
-              </Link>
-            </nav>
+              </Link> */}
+            {/* </nav> */}
             <Link 
               className="btn text-sm text-white bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded-xl w-full sm:w-auto group transition duration-150 ease-in-out text-center" 
               href="/request-demo"

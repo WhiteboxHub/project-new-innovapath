@@ -268,12 +268,14 @@ export default function AITrainingCards() {
     <div className="relative bg-gradient-to-br from-[#1A103E] to-[#7b4fff] rounded-2xl p-8 shadow-xl">
       <h3 className="text-2xl font-semibold text-white"> Conversational AI Assistants</h3>
       <p className="mt-4 text-lg text-gray-300 leading-relaxed">
-        Smart chatbots that handle internal HR queries, guide employees through policies, and reduce helpdesk load.
+        Smart AI assistants that understand questions, guide users, and automate everyday tasks.
+
+
         </p>
         <ul className="mt-4 list-disc list-inside text-gray-300 text-lg space-y-1">
         <li>Natural language support across platforms.</li>
-        <li>Available 24/7 for HR, payroll, and policy questions.</li>
-        <li>Integrates seamlessly with existing HR systems.</li>
+        <li>Guides users through tasks and workflows.</li>
+        <li>Automates routine actions to save time.</li>
         </ul>
       {/* </p> */}
 
@@ -298,7 +300,7 @@ export default function AITrainingCards() {
             </p>
             <ul className="mt-4 list-disc list-inside text-gray-300 text-lg space-y-1">
             <li>Detect anomalies in hiring or attrition.</li>
-            <li>Align HR initiatives with internal risk thresholds.</li>
+            <li>Make sure operations follow company rules and limits.</li>
             <li>Alert and auto-suggest resolutions in real-time.</li>
             </ul>
           
