@@ -220,25 +220,16 @@
 //   )
 // }
 
-
-
-
-                  
-
-
-
-
-
-
 export default function AITrainingCards() {
   return (
     <div className="bg-white text-black py-12 px-6">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-          We support across the entire AI value chain
+          We Support the Full Talent Management Lifecycle
         </h2>
         <p className="text-lg text-white-300">
-          From data cleaning and automation to chain-of-thought reasoning and custom evaluations.
+          From resume parsing and support automation to talent forecasting and
+          smart feedback loops.
         </p>
       </div>
 
@@ -257,58 +248,112 @@ export default function AITrainingCards() {
           </div>
         </div> */}
 
-{/* <div className="mt-8 grid md:grid-cols-2 gap-6 max-w-6xl mx-auto"> */}
-  {/* Styled Card */}
-  <div className="relative group rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-[1.03]">
-    
-    {/* Offset glowing gradient outline */}
-    <div className="absolute -inset-1 bg-gradient-to-br from-[#1A103E] to-[#2D1A64] group-hover:from-[#2D1A64] group-hover:to-[#1A103E] rounded-3xl blur-lg opacity-40 group-hover:opacity-60 transition-all duration-500 -z-10"></div>
+        {/* <div className="mt-8 grid md:grid-cols-2 gap-6 max-w-6xl mx-auto"> */}
+        {/* Styled Card */}
+        <div className="relative group rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-[1.03]">
+          {/* Offset glowing gradient outline */}
+          <div className="absolute -inset-1 bg-gradient-to-br from-[#1A103E] to-[#2D1A64] group-hover:from-[#2D1A64] group-hover:to-[#1A103E] rounded-3xl blur-lg opacity-40 group-hover:opacity-60 transition-all duration-500 -z-10"></div>
 
-    {/* Card Content */}
-    <div className="relative bg-gradient-to-br from-[#1A103E] to-[#7b4fff] rounded-2xl p-8 shadow-xl">
-      <h3 className="text-2xl font-semibold text-white"> Conversational AI Assistants</h3>
-      <p className="mt-4 text-lg text-gray-300 leading-relaxed">
-        Smart AI assistants that understand questions, guide users, and automate everyday tasks.
+          {/* Card Content */}
+          <div className="relative bg-gradient-to-br from-[#1A103E] to-[#7b4fff] rounded-2xl p-8 shadow-xl">
+            <h3 className="text-2xl font-semibold text-white">
+              {" "}
+              Conversational Talent Agents
+            </h3>
+            <p className="mt-4 text-lg text-gray-300 leading-relaxed">
+              AI agents that understand employee needs, assist HR, and automate
+              everyday talent workflows.
+            </p>
+            <ul className="mt-4 list-disc list-inside text-gray-300 text-lg space-y-1">
+              <li>Respond to HR, benefits, and onboarding questions anytime</li>
+              <li>
+                Guide candidates and employees through tasks and decisions
+              </li>
+              <li>
+                Automate repetitive workflows like check-ins, survey collection,
+                and policy answers
+              </li>
+            </ul>
+            {/* </p> */}
 
-
-        </p>
-        <ul className="mt-4 list-disc list-inside text-gray-300 text-lg space-y-1">
-        <li>Natural language support across platforms.</li>
-        <li>Guides users through tasks and workflows.</li>
-        <li>Automates routine actions to save time.</li>
-        </ul>
-      {/* </p> */}
-
-      {/* Centered Button with spacing and hover effect */}
-      {/* <div className="mt-12 flex justify-center">
+            {/* Centered Button with spacing and hover effect */}
+            {/* <div className="mt-12 flex justify-center">
         <button className="bg-white text-black px-5 py-3 rounded-xl font-semibold shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg">
           Explore AI training
         </button>
       </div> */}
-    </div>
-  </div>
-{/* </div> */}
-
-
+          </div>
+        </div>
+        {/* </div> */}
 
         <div className="relative group rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-[1.03]">
-        {/* Second Card */}
-        <div className="relative bg-gradient-to-br from-[#1A103E] to-[#7b4fff] rounded-2xl p-8 shadow-xl">
-          <h3 className="text-2xl font-semibold text-white">Continuous AI Governance</h3>
-          <p className="mt-4 text-lg text-gray-300 leading-relaxed">
-            Automated monitoring and control for evolving talent practices.
+          {/* Second Card */}
+          {/* <div className="relative bg-gradient-to-br from-[#1A103E] to-[#7b4fff] rounded-2xl p-8 shadow-xl">
+            <h3 className="text-2xl font-semibold text-white">
+              Continuous Talent Governance
+            </h3>
+            <p className="mt-4 text-lg text-gray-300 leading-relaxed">
+              Ongoing AI oversight to ensure fairness, compliance, and
+              accountability.
             </p>
             <ul className="mt-4 list-disc list-inside text-gray-300 text-lg space-y-1">
-            <li>Detect anomalies in hiring or attrition.</li>
-            <li>Make sure operations follow company rules and limits.</li>
-            <li>Alert and auto-suggest resolutions in real-time.</li>
-            </ul>
-          
-          {/* <div className="mt-12 flex justify-center"> */}
-          {/* <button className="bg-white text-black px-5 py-3 rounded-xl font-semibold shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg">
+              <li>
+                Detect unusual trends in hiring, promotions, or attrition.
+              </li>
+              <li>
+                Ensure internal policies and diversity goals are followed.
+              </li>
+              <li>Trigger alerts and offer real-time recommendations for corrective action.</li>
+            </ul> */}
+
+
+            {/* <div className="relative group rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-[1.03] w-full max-w-md h-auto">
+              <div className="relative bg-gradient-to-br from-[#1A103E] to-[#7b4fff] rounded-2xl p-8 shadow-xl h-full">
+                <h3 className="text-2xl font-semibold text-white">
+                  Continuous Talent Governance
+                </h3>
+                <p className="mt-4 text-lg text-gray-300 leading-relaxed">
+                  Ongoing AI oversight to ensure fairness, compliance, and
+                  accountability.
+                </p>
+                <ul className="mt-4 list-disc list-inside text-gray-300 text-lg space-y-1">
+                  <li>Detect unusual trends in hiring, promotions, or attrition.</li>
+                  <li>Ensure internal policies and diversity goals are followed.</li>
+                  <li>
+                    Trigger alerts and offer real-time recommendations for corrective
+                    action.
+                  </li>
+                </ul>
+              </div>* */}
+
+
+              <div className="group w-full max-w-lg transition-transform duration-300 hover:scale-[1.03]">
+                <div className="relative bg-gradient-to-br from-[#1A103E] to-[#7b4fff] rounded-2xl p-6 sm:p-8 shadow-xl h-full flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-2xl font-semibold text-white">
+                      Continuous Talent Governance
+                    </h3>
+                    <p className="mt-4 text-base sm:text-lg text-gray-300 leading-relaxed">
+                      Ongoing AI oversight to ensure fairness, compliance, and accountability.
+                    </p>
+                  </div>
+                  <ul className="mt-6 list-disc list-inside text-gray-300 text-base sm:text-lg space-y-1">
+                    <li>Detect unusual trends in hiring, promotions, or attrition</li>
+                    <li>Ensure internal policies and diversity goals are followed</li>
+                    <li>Trigger real-time alerts and corrective action suggestions</li>
+                  </ul>
+                </div>
+
+
+
+
+            
+
+            {/* <div className="mt-12 flex justify-center"> */}
+            {/* <button className="bg-white text-black px-5 py-3 rounded-xl font-semibold shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg">
             Explore AI for enterprise
           </button> */}
-          {/* </div> */}
+            {/* </div> */}
           </div>
         </div>
       </div>

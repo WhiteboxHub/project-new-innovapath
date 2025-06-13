@@ -61,73 +61,73 @@
 //   )
 // }
 
-import Image from 'next/image'
-import { CheckCircleIcon } from '@heroicons/react/24/solid'
-import TargetImage from '@/public/images/target.png'
+// import Image from 'next/image'
+// import { CheckCircleIcon } from '@heroicons/react/24/solid'
+// import TargetImage from '@/public/images/target.png'
 
-export default function IntelligentAutomation() {
-  return (
-    <section className="bg-gradient-to-b from-slate-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 md:py-24">
-        <div className="flex flex-col-reverse md:flex-row items-center md:space-x-12 lg:space-x-20">
+// export default function IntelligentAutomation() {
+//   return (
+//     <section className="bg-gradient-to-b from-slate-50 to-white">
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 md:py-24">
+//         <div className="flex flex-col-reverse md:flex-row items-center md:space-x-12 lg:space-x-20">
 
-          {/* Left Content */}
-          <div className="md:w-1/2 mt-10 md:mt-0" data-aos="fade-right">
-            <div className="max-w-xl">
-              {/* Pre-title with SVG */}
-              <div className="flex items-center mb-3 space-x-2">
-                <img
-                  src="https://engagedly.com/wp-content/uploads/2025/04/automation-svg.svg"
-                  alt="Automation Icon"
-                  className="w-6 h-6"
-                />
-                <div className="text-xs uppercase tracking-wider font-semibold text-slate-600">
-                  Automation
-                </div>
-              </div>
+//           {/* Left Content */}
+//           <div className="md:w-1/2 mt-10 md:mt-0" data-aos="fade-right">
+//             <div className="max-w-xl">
+//               {/* Pre-title with SVG */}
+//               <div className="flex items-center mb-3 space-x-2">
+//                 <img
+//                   src="https://engagedly.com/wp-content/uploads/2025/04/automation-svg.svg"
+//                   alt="Automation Icon"
+//                   className="w-6 h-6"
+//                 />
+//                 <div className="text-xs uppercase tracking-wider font-semibold text-slate-600">
+//                   Automation
+//                 </div>
+//               </div>
 
-              {/* Heading */}
-              <h3 className="text-3xl lg:text-4xl font-semibold text-slate-800 mb-4">
-                Smart Automation
-              </h3>
+//               {/* Heading */}
+//               <h3 className="text-3xl lg:text-4xl font-semibold text-slate-800 mb-4">
+//                 Smart Automation
+//               </h3>
 
-              {/* Description */}
-              <p className="text-lg text-slate-600 mb-6">
-                Innovapath helps you automate routine processes and reduce manual work with intelligent systems that drive real results—quickly and efficiently.
-              </p>
+//               {/* Description */}
+//               <p className="text-lg text-slate-600 mb-6">
+//                 Innovapath helps you automate routine processes and reduce manual work with intelligent systems that drive real results—quickly and efficiently.
+//               </p>
 
-              {/* Bullet List */}
-              <ul className="space-y-4 text-base text-slate-700">
-                {[
-                  'Automate repetitive tasks and approval flows',
-                  'Track progress and activities in real time',
-                  'Automatic reminders for compliance deadlines',
-                  'Easily connect with your current tools and platforms',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start">
-                    <CheckCircleIcon className="h-5 w-5 text-emerald-500 mt-1 mr-3" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+//               {/* Bullet List */}
+//               <ul className="space-y-4 text-base text-slate-700">
+//                 {[
+//                   'Automate repetitive tasks and approval flows',
+//                   'Track progress and activities in real time',
+//                   'Automatic reminders for compliance deadlines',
+//                   'Easily connect with your current tools and platforms',
+//                 ].map((item, i) => (
+//                   <li key={i} className="flex items-start">
+//                     <CheckCircleIcon className="h-5 w-5 text-emerald-500 mt-1 mr-3" />
+//                     <span>{item}</span>
+//                   </li>
+//                 ))}
+//               </ul>
+//             </div>
+//           </div>
 
-          {/* Right Image */}
-          <div className="md:w-1/2 mb-10 md:mb-0" data-aos="fade-left">
-            <div className="max-w-full lg:max-w-md xl:max-w-lg mx-auto">
-              <Image
-                src={TargetImage}
-                alt="Intelligent Automation"
-                width={540}
-                height={540}
-                className="w-full h-auto rounded-2xl shadow-xl"
-              />
-            </div>
-          </div>
+//           {/* Right Image */}
+//           <div className="md:w-1/2 mb-10 md:mb-0" data-aos="fade-left">
+//             <div className="max-w-full lg:max-w-md xl:max-w-lg mx-auto">
+//               <Image
+//                 src={TargetImage}
+//                 alt="Intelligent Automation"
+//                 width={540}
+//                 height={540}
+//                 className="w-full h-auto rounded-2xl shadow-xl"
+//               />
+//             </div>
+//           </div>
 
-        </div>
-      </div>
-    </section>
-  )
-}
+//         </div>
+//       </div>
+//     </section>
+//   )
+// }

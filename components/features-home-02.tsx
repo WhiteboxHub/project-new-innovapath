@@ -134,41 +134,41 @@ import { useState } from 'react'
 // import Image01 from '@/public/images/logo/image-1.png'
 // import Image02 from '@/public/images/logo/image-2.png'
 // import Image03 from '@/public/images/logo/image-3.png'
-import { Bot, Users, BarChart3, Mic, GaugeCircle, PartyPopper } from 'lucide-react'
+import { Users, BarChart3, Mic, GaugeCircle, PartyPopper, Target, Rocket, Book, GraduationCap, MessageCircle, Bot, User, UserIcon } from 'lucide-react'
 
 export default function FeaturesHome02() {
   const [tab, setTab] = useState<number>(1)
 
   const agents = [ 
     {
-      title: 'Support Agent',
-      desc: 'Answers employee or team member questions around policies, tools, and documentation—available 24/7 to reduce delays and boost productivity.',
-      icon: <Bot className="w-8 h-8 text-blue-500 mb-3" />,
+      title: 'Performance Coach',
+      desc: 'Helps each employee grow with personal, actionable goals.',
+      icon: <Target className="w-8 h-8 text-red-500 mb-3" />,
     },
     {
-      title: 'Development Coach Agent',
-      desc: 'Helps individuals create tailored learning and growth plans, encouraging continuous skill development and career advancement.',
-      icon: <Users className="w-8 h-8 text-green-500 mb-3" />,
+      title: 'Smart Recruiter',
+      desc: 'Recommends top-fit candidates for open roles in seconds.',
+      icon: <Rocket className="w-8 h-8 text-green-500 mb-3" />,
     },
     {
-      title: 'Capability Framework Agent',
-      desc: 'Assists in building structured role frameworks, skill libraries, and competency models—ensuring clarity in roles, expectations, and growth paths.',
-      icon: <BarChart3 className="w-8 h-8 text-purple-500 mb-3" />,
+      title: 'Upskill Guide',
+      desc: 'Finds training gaps and suggests courses or mentors.',
+      icon: <GraduationCap className="w-8 h-8 text-indigo-500 mb-3" />,
     },
     {
-      title: 'Meeting Companion Agent',
-      desc: 'Captures and summarizes meetings, assigns follow-ups, and highlights key insights—turning discussions into clear, actionable outcomes.',
-      icon: <Mic className="w-8 h-8 text-yellow-500 mb-3" />,
+      title: '24/7 HR Assistant',
+      desc: 'Instant answers to HR policy or benefits questions.',
+      icon: <MessageCircle className="w-8 h-8 text-yellow-500 mb-3" />,
     },
     {
-      title: 'Performance Booster Agent',
-      desc: 'Notices when key milestones—like feedback, reviews, or recognition—are overdue, and sends smart reminders to keep performance on track.',
-      icon: <GaugeCircle className="w-8 h-8 text-red-500 mb-3" />,
+      title: 'Interview Assistant',
+      desc: 'Creates and scores role-specific interview questions.',
+      icon: <Bot className="w-8 h-8 text-red-500 mb-3" />,
     },
     {
-      title: 'Engagement & Culture Agent',
-      desc: 'Shares updates, celebrates milestones, and responds to timely events—keeping your team connected, informed, and engaged.',
-      icon: <PartyPopper className="w-8 h-8 text-pink-500 mb-3" />,
+      title: 'Internal Talent Finder',
+      desc: 'Surfaces high-potential employees for internal roles.',
+      icon: <UserIcon className="w-8 h-8 text-pink-500 mb-3" />,
     },
   ]
 
@@ -179,9 +179,10 @@ export default function FeaturesHome02() {
 
           {/* Section header */}
           <div className="max-w-5xl mx-auto text-center pb-12 md:pb-15">
-            <h2 className="h2 font-playfair-display text-slate-800">Welcome to the Future with Agent-Led AI</h2>
+            <h2 className="h2 font-playfair-display text-slate-800">Smart AI Agents for Every Stage of Talent Management</h2>
             <p className="mt-4 text-lg text-slate-600">
-             At Innovapath, our AI agents automate everyday tasks and deliver smart insights to boost productivity. This lets your team focus on strategy, growth, and what truly matters.
+             From hiring to growth and retention, our agents work behind the scenes to automate workflows, surface insights, and support every person on your team.
+
             </p>
           </div>
 
