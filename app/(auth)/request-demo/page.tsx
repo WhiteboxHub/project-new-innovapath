@@ -141,8 +141,8 @@ export default function RequestDemo() {
   return (
     <>
       {/* Content */}
-      <div className="w-full md:w-1/2 border">
-        <div className="min-h-screen h-full flex flex-col justify-center">
+      <div className="w-full md:w-1/2 border h-screen overflow-auto">
+        <div className="h-full flex flex-col justify-center p-4">
           <div className="px-5 sm:px-6 py-4">
             <div className="w-full max-w-md mx-auto">
               {/* Site branding */}
@@ -162,7 +162,7 @@ export default function RequestDemo() {
               </div>
 
               {/* Form Container */}
-              <div className="mb-10 rounded-xl p-8 shadow-lg bg-gray-200">
+              <div className="mb-10 rounded-xl p-8 shadow-lg bg-gray-200 max-h-screen overflow-auto">
                 <form>
                   <div className="space-y-4">
                     <div>
@@ -195,7 +195,7 @@ export default function RequestDemo() {
                       />
                     </div>
 
-                    {/* ✅ Phone Number Field */}
+                    {/*  Phone Number Field */}
                     <div>
                       <label
                         className="block text-sm font-medium mb-1"
