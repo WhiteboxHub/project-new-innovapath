@@ -689,7 +689,7 @@ export default function SearchCandidatesPage() {
     const queryParams = new URLSearchParams(filters).toString();
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/candidate_marketing/?${queryParams}`);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/candidate_marketing?${queryParams}`);
       if (!response.ok) throw new Error('Network response was not ok');
 
       const data = await response.json();

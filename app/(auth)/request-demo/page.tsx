@@ -496,7 +496,7 @@ export default function RequestDemoPage() {
     setLoading(true);
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/vendor/request-demo`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/request-demo`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
