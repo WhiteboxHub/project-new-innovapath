@@ -597,9 +597,9 @@ export default function RequestDemoPage() {
                       disabled={loading}
                     >
                       {loading ? 'Submitting...' : 'Submit'}
-                      <span className="ml-1 text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out">
+                      {/* <span className="ml-1 text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out">
                         -&gt;
-                      </span>
+                      </span> */}
                     </button>
                   </div>
 
