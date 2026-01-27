@@ -96,17 +96,19 @@ export default function HeroHome() {
                   </span>
                 </Link> */ }
 
-                  
-                  <Link
-                    className="btn text-sm text-white bg-blue-600 hover:bg-blue-600 px-3 py-2 rounded-xl w-auto group transition duration-150 ease-in-out"
-                    href="/request-demo"
-                    // font-times-new-roman
-                  >
-                    Request Demo{" "}
-                    <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-                      -&gt;
-                    </span>
-                  </Link>
+
+                <Link
+                  className="btn text-sm text-white bg-blue-600 hover:bg-blue-600 px-3 py-2 rounded-xl w-auto group transition duration-150 ease-in-out"
+                  href="/request-demo"
+                // font-times-new-roman
+                >
+                  Request Demo{" "}
+                  <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                    -&gt;
+                  </span>
+                </Link>
+                
+                
 
               </div>
             </div>
