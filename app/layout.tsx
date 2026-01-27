@@ -1,4 +1,5 @@
 import './css/style.css'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import { Inter, Playfair_Display } from 'next/font/google'
 
@@ -46,6 +47,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${playfair.variable} font-inter antialiased bg-white text-slate-800 tracking-tight`}>
         {children}
+        <GoogleAnalytics gaId="G-XXXXXXXXXX" />
       </body>
     </html>
   )
