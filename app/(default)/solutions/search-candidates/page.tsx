@@ -34,12 +34,12 @@
 // //   const [showResults, setShowResults] = useState(false);
 // //   const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(null);
 
- 
+
 // //   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
 // //     const { name, value } = e.target;
 // //     setFilters((prev) => ({ ...prev, [name]: value }));
 // //   };
-  
+
 // //   const handleRequestProfiles = async () => {
 // //     setLoading(true);
 // //     setShowResults(true);
@@ -64,11 +64,11 @@
 // //     setLoading(false);
 // //   };
 
- 
+
 // //   const handleProfileRequest = (candidate: Candidate) => {
 // //     setSelectedCandidate(candidate);
 // //   };
-  
+
 
 // //   return (
 // //     <div className="flex flex-col min-h-screen">
@@ -689,7 +689,7 @@ export default function SearchCandidatesPage() {
     const queryParams = new URLSearchParams(filters).toString();
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/talent_search?${queryParams}`);
+      const response = await fetch(`https://whitebox-learning.com/api/talent_search?${queryParams}`);
       if (!response.ok) throw new Error('Network response was not ok');
 
       const data = await response.json();

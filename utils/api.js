@@ -17,7 +17,7 @@ function getToken() {
 
 // Build full URL from endpoint
 function buildUrl(endpoint) {
-  const baseUrl = (process.env.NEXT_PUBLIC_API_URL || "https://whitebox-learning.com").replace(/\/$/, "");
+  const baseUrl = "https://whitebox-learning.com/api";
   let ep = endpoint.replace(/^\//, ""); // remove leading slash
   if (ep.startsWith("api/")) ep = ep.substring(4);
   return baseUrl ? `${baseUrl}/${ep}` : `/${ep}`;
@@ -33,7 +33,7 @@ export async function apiFetch(endpoint, options = {}) {
       localStorage.getItem("bearer_token") ||
       null);
 
-  const baseUrl = (process.env.NEXT_PUBLIC_API_URL || "https://whitebox-learning.com").replace(/\/$/, "");
+  const baseUrl = "https://whitebox-learning.com/api";
 
 
   let endpointStr = String(endpoint).replace(/^\//, "");
@@ -152,5 +152,5 @@ export async function smartUpdate(resource, id, data, opts = {}) {
 }
 
 export const authFetch = apiFetch;
-export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://whitebox-learning.com";
+export const API_BASE_URL = "https://whitebox-learning.com/api";
 export default api;
