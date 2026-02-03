@@ -36,7 +36,7 @@
 //         body: JSON.stringify(formData),
 //       });
 //       console.log(response);
-      
+
 //       if (response.ok) {
 //         setMessage('Demo request submitted successfully!');
 //         setFormData({
@@ -60,13 +60,13 @@
 //   };
 
 //   return (
-    
+
 //     <>  
 //     <div className="bg-slate-900">
 //             <Header />
 //           </div>
 //     {/* Content */} 
-    
+
 //     <div className="w-full md:w-1/2 border">
 //       <div className="min-h-screen h-full flex flex-col justify-center">
 //         <div className="px-5 sm:px-6 py-4">
@@ -190,9 +190,9 @@
 //           </div>
 //         </div>
 //       </div>
-      
+
 //      </>
-     
+
 
 //   );
 // }
@@ -239,7 +239,7 @@
 //         body: JSON.stringify(formData),
 //       });
 //       console.log(response);
-      
+
 //       if (response.ok) {
 //         setMessage('Demo request submitted successfully!');
 //         setFormData({
@@ -425,7 +425,7 @@
 //     </div>
 
 //     {/* Right Side */}
-    
+
 //    <div className="relative hidden md:block md:w-1/2 bg-slate-950" aria-hidden="true">
 //         <div className="min-h-screen h-full flex flex-col justify-center px-6 sm:px-10">
 //           <div className="max-w-lg mx-auto text-slate-100 space-y-8">
@@ -496,7 +496,7 @@ export default function RequestDemoPage() {
     setLoading(true);
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/request-demo`, {
+      const response = await fetch(`https://whitebox-learning.com/api/request-demo`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

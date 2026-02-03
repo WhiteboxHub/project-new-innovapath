@@ -1,20 +1,52 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 
 export default function UnsubscribePage() {
   const [email, setEmail] = useState('')
+  const [token, setToken] = useState<string | null>(null)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const router = useRouter()
 
-  const handleSubmit = (e: React.FormEvent) => {
+  useEffect(() => {
+    // Attempt to get email or token from the URL if coming from an email link
+    const searchParams = new URLSearchParams(window.location.search)
+    const emailParam = searchParams.get('email')
+    const tokenParam = searchParams.get('token')
+
+    if (emailParam) setEmail(emailParam)
+    if (tokenParam) setToken(tokenParam)
+  }, [])
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setIsLoading(true)
+    setError(null)
 
-    // 🔜 Later you can call API here with `email`
-    // await fetch('/api/unsubscribe', { ... })
+    try {
+      const { apiFetch } = await import('@/utils/api')
 
-    // Redirect to success page
-    router.push('/solutions/unsubscribe-success')
+      // We use the new outreach-feedback / outreach-unsubscribe logic we just set up
+      // It supports both email or token
+      let endpoint = '/api/outreach-unsubscribe?format=json'
+      if (token) {
+        endpoint += `&token=${encodeURIComponent(token)}`
+      } else {
+        endpoint += `&email=${encodeURIComponent(email)}`
+      }
+
+      await apiFetch(endpoint, { method: 'GET' })
+
+      // Redirect to success page
+      router.push('/solutions/unsubscribe-success')
+    } catch (err: any) {
+      console.error('Unsubscribe failed:', err)
+      setError('Could not process your request. Please try again or contact support.')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -45,6 +77,10 @@ export default function UnsubscribePage() {
             outreach from candidates using our platform.
           </p>
 
+          {error && (
+            <p className="text-red-500 font-medium">{error}</p>
+          )}
+
           <form
             onSubmit={handleSubmit}
             className="flex flex-col sm:flex-row gap-4"
@@ -52,19 +88,25 @@ export default function UnsubscribePage() {
             <input
               type="email"
               required
+              disabled={isLoading}
               placeholder="Business email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="flex-1 rounded-lg border border-slate-300 px-4 py-3
-                         focus:outline-none focus:ring-2 focus:ring-slate-800"
+                         focus:outline-none focus:ring-2 focus:ring-slate-800 disabled:opacity-50"
             />
 
             <button
               type="submit"
+              disabled={isLoading}
               className="rounded-lg bg-slate-900 px-6 py-3
-                         text-white font-medium hover:bg-slate-800 transition"
+                         text-white font-medium hover:bg-slate-800 transition disabled:opacity-50 flex items-center justify-center min-w-[120px]"
             >
-              Unsubscribe
+              {isLoading ? (
+                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+              ) : (
+                'Unsubscribe'
+              )}
             </button>
           </form>
 
